@@ -1,0 +1,24 @@
+version: "3.5"
+services:
+  fourmakers-web-prod:
+    image: sistemasinternos.foursys.com.br:5000/fourmakers-web-prod:latest
+    container_name: fourmakers-web-prod
+    ports:
+      - "8487:80"
+    expose:
+      - "8487"
+    networks:
+      - docker-network
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    logging:
+      options:
+        max-size: 10m
+
+networks:
+   docker-network:
+      external: true
+      name: docker-network
+      driver: bridge

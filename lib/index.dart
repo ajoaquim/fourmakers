@@ -1,0 +1,183 @@
+// Export pages
+export '/fourmakers/onboarding/sign_up/sign_up_widget.dart' show SignUpWidget;
+export '/fourmakers/onboarding/sign_in/sign_in_widget.dart' show SignInWidget;
+export '/fourmakers/onboarding/phone_sign_in/phone_sign_in_widget.dart'
+    show PhoneSignInWidget;
+export '/fourmakers/onboarding/phone_verify/phone_verify_widget.dart'
+    show PhoneVerifyWidget;
+export '/fourmakers/onboarding/forgot_password/forgot_password_widget.dart'
+    show ForgotPasswordWidget;
+export '/fourmakers/system_pages/loading_page/loading_page_widget.dart'
+    show LoadingPageWidget;
+export '/fourmakers/system_pages/home/home_widget.dart' show HomeWidget;
+export '/fourmakers/system_pages/home_dashboard/home_dashboard_widget.dart'
+    show HomeDashboardWidget;
+export '/fourmakers/system_pages/felizometro/felizometro_widget.dart'
+    show FelizometroWidget;
+export '/fourmakers/p_d_is/verpdi/verpdi_widget.dart' show VerpdiWidget;
+export '/fourmakers/dados_colaborador/dados_academicos_formacoes/dados_academicos_formacoes_widget.dart'
+    show DadosAcademicosFormacoesWidget;
+export '/fourmakers/login/login_slide1/login_slide1_widget.dart'
+    show LoginSlide1Widget;
+export '/fourmakers/dados_colaborador/dados_profissionais_competencias/dados_profissionais_competencias_widget.dart'
+    show DadosProfissionaisCompetenciasWidget;
+export '/fourmakers/dados_colaborador/dados_pessoais_new/dados_pessoais_new_widget.dart'
+    show DadosPessoaisNewWidget;
+export '/client_b_w_g/vagas/vagas_p_j/vagas_p_j_widget.dart' show VagasPJWidget;
+export '/fourmakers/login/login_slide2/login_slide2_widget.dart'
+    show LoginSlide2Widget;
+export '/client_b_w_g/vagas/vagasv1like/vagasv1like_widget.dart'
+    show Vagasv1likeWidget;
+export '/client_b_w_g/vagas/vagasv1modal/vagasv1modal_widget.dart'
+    show Vagasv1modalWidget;
+export '/client_b_w_g/vagas/vagasv1modal3/vagasv1modal3_widget.dart'
+    show Vagasv1modal3Widget;
+export '/client_b_w_g/vagas/vagasv1modal2/vagasv1modal2_widget.dart'
+    show Vagasv1modal2Widget;
+export '/client_b_w_g/vagas/vagasv1modal1/vagasv1modal1_widget.dart'
+    show Vagasv1modal1Widget;
+export '/fourmakers/p_d_is/criarpdi/criarpdi_widget.dart' show CriarpdiWidget;
+export '/fourmakers/p_d_is/meuspdis/meuspdis_widget.dart' show MeuspdisWidget;
+export '/client_b_w_g/empresa/projetos/novo_projeto/novo_projeto_widget.dart'
+    show NovoProjetoWidget;
+export '/client_b_w_g/empresa/projetos/projetos/projetos_widget.dart'
+    show ProjetosWidget;
+export '/client_b_w_g/empresa/home_empresa/home_empresa_widget.dart'
+    show HomeEmpresaWidget;
+export '/client_b_w_g/empresa/projetos/verprojeto/verprojeto_widget.dart'
+    show VerprojetoWidget;
+export '/fourmakers/p_d_is/pditime/pditime_widget.dart' show PditimeWidget;
+export '/client_b_w_g/prestador/prestadores_dados/p_j_horas/apontamento_horas_p_j/apontamento_horas_p_j_widget.dart'
+    show ApontamentoHorasPJWidget;
+export '/fourmakers/dados_colaborador/dados_profissionais_experiencias/dados_profissionais_experiencias_widget.dart'
+    show DadosProfissionaisExperienciasWidget;
+export '/fourmakers/dados_colaborador/dados_profissionais_curriculo/dados_profissionais_curriculo_widget.dart'
+    show DadosProfissionaisCurriculoWidget;
+export '/client_b_w_g/prestador/prestadores_dados/p_j_horas/historico_pagamento_p_j/historico_pagamento_p_j_widget.dart'
+    show HistoricoPagamentoPJWidget;
+export '/fourmakers/paginas_externas/landing_page/landing_page_widget.dart'
+    show LandingPageWidget;
+export '/fourmakers/system_pages/support/support_widget.dart'
+    show SupportWidget;
+export '/fourmakers/playground/ajuda_b_k_p/ajuda_b_k_p_widget.dart'
+    show AjudaBKPWidget;
+export '/fourmakers/playground/home_candidato/home_candidato_widget.dart'
+    show HomeCandidatoWidget;
+export '/client_b_w_g/empresa/projetos/prestadores/prestadores_backoffice/prestadores_backoffice_widget.dart'
+    show PrestadoresBackofficeWidget;
+export '/client_b_w_g/empresa/projetos/prestadores/dados_pessoais_p_j_backoffice/dados_pessoais_p_j_backoffice_widget.dart'
+    show DadosPessoaisPJBackofficeWidget;
+export '/client_b_w_g/empresa/projetos/prestadores/dados_p_j_p_j_backoffice/dados_p_j_p_j_backoffice_widget.dart'
+    show DadosPJPJBackofficeWidget;
+export '/client_b_w_g/empresa/projetos/prestadores/dados_projetos_p_j_backoffice/dados_projetos_p_j_backoffice_widget.dart'
+    show DadosProjetosPJBackofficeWidget;
+export '/fourmakers/dados_colaborador/dados_pessoais_estrangeiros/dados_pessoais_estrangeiros_widget.dart'
+    show DadosPessoaisEstrangeirosWidget;
+export '/fourmakers/system_pages/support_backoffice/support_backoffice_widget.dart'
+    show SupportBackofficeWidget;
+export '/client_b_w_g/prestador/prestadores_dados/p_jcadastro/dados_pessoais_p_j/dados_pessoais_p_j_widget.dart'
+    show DadosPessoaisPJWidget;
+export '/fourmakers/dados_colaborador/dados_profissionais_certificados/dados_profissionais_certificados_widget.dart'
+    show DadosProfissionaisCertificadosWidget;
+export '/client_b_w_g/empresa/beneficios/beneficios/beneficios_widget.dart'
+    show BeneficiosWidget;
+export '/client_b_w_g/prestador/prestadores_dados/p_jlogin/login_p_j/login_p_j_widget.dart'
+    show LoginPJWidget;
+export '/client_b_w_g/prestador/home_p_j/home_p_j_widget.dart'
+    show HomePJWidget;
+export '/client_b_w_g/empresa/loginempresa/loginempresa_widget.dart'
+    show LoginempresaWidget;
+export '/client_b_w_g/empresa/apontamentos/apontamentos_empresa/apontamentos_empresa_widget.dart'
+    show ApontamentosEmpresaWidget;
+export '/client_b_w_g/empresa/empresa_cadastro/minha_empresa/minha_empresa_widget.dart'
+    show MinhaEmpresaWidget;
+export '/client_b_w_g/empresa/empresa_cadastro/cadastro_empresa/cadastro_empresa_widget.dart'
+    show CadastroEmpresaWidget;
+export '/client_b_w_g/prestador/prestadores_dados/p_jlogin/send_email_p_j/send_email_p_j_widget.dart'
+    show SendEmailPJWidget;
+export '/client_b_w_g/prestador/prestadores_dados/p_jlogin/change_password_p_j/change_password_p_j_widget.dart'
+    show ChangePasswordPJWidget;
+export '/client_b_w_g/prestador/prestadores_dados/p_jcadastro/cadastro_p_j/cadastro_p_j_widget.dart'
+    show CadastroPJWidget;
+export '/client_b_w_g/prestador/prestadores_dados/p_jlogin/send_email_empresa/send_email_empresa_widget.dart'
+    show SendEmailEmpresaWidget;
+export '/client_b_w_g/prestador/prestadores_dados/p_jlogin/change_password_empresa/change_password_empresa_widget.dart'
+    show ChangePasswordEmpresaWidget;
+export '/client_b_w_g/prestador/prestadores_dados/loading_p_j/loading_p_j_widget.dart'
+    show LoadingPJWidget;
+export '/client_b_w_g/empresa/loading_empresa/loading_empresa_widget.dart'
+    show LoadingEmpresaWidget;
+export '/client_b_w_g/prestador/prestadores_dados/p_j_horas/envio_nota_p_j/envio_nota_p_j_widget.dart'
+    show EnvioNotaPJWidget;
+export '/client_b_w_g/empresa/aprovacao_n_fs/aprovacao_n_fs/aprovacao_n_fs_widget.dart'
+    show AprovacaoNFsWidget;
+export '/fourmakers/book_colaboradores/colaboradores_book/colaboradores_book_widget.dart'
+    show ColaboradoresBookWidget;
+export '/client_b_w_g/empresa/pagamentos/pagamentos_empresa/pagamentos_empresa_widget.dart'
+    show PagamentosEmpresaWidget;
+export '/fourmakers/book_colaboradores/salarios_book/salarios_book_widget.dart'
+    show SalariosBookWidget;
+export '/fourmakers/book_colaboradores/ausencias_book/ausencias_book_widget.dart'
+    show AusenciasBookWidget;
+export '/fourmakers/book_colaboradores/acompanhamentos_book/acompanhamentos_book_widget.dart'
+    show AcompanhamentosBookWidget;
+export '/fourmakers/system_pages/supports_colab/supports_colab_widget.dart'
+    show SupportsColabWidget;
+export '/fourmakers/p_d_is/meu_p_d_inew/meu_p_d_inew_widget.dart'
+    show MeuPDInewWidget;
+export '/client_b_w_g/empresa/master/master_parametrizacao/master_parametrizacao_widget.dart'
+    show MasterParametrizacaoWidget;
+export '/fourmakers/p_d_is/pditime_n_e_w/pditime_n_e_w_widget.dart'
+    show PditimeNEWWidget;
+export '/client_b_w_g/empresa/master/master_parametrizacao_new/master_parametrizacao_new_widget.dart'
+    show MasterParametrizacaoNewWidget;
+export '/client_b_w_g/prestador/prestadores_dados/p_jcadastro/dados_juridicos_p_j/dados_juridicos_p_j_widget.dart'
+    show DadosJuridicosPJWidget;
+export '/client_b_w_g/empresa/beneficios/beneficios_criar/beneficios_criar_widget.dart'
+    show BeneficiosCriarWidget;
+export '/client_b_w_g/empresa/pagamentos/pagamentos_empresa_copy/pagamentos_empresa_copy_widget.dart'
+    show PagamentosEmpresaCopyWidget;
+export '/fourmakers/book_colaboradores/detalhes/detalhes_colaborador_book/detalhes_colaborador_book_widget.dart'
+    show DetalhesColaboradorBookWidget;
+export '/fourmakers/book_colaboradores/detalhes/detalhes_salarios_book/detalhes_salarios_book_widget.dart'
+    show DetalhesSalariosBookWidget;
+export '/fourmakers/book_colaboradores/detalhes/detalhes_ausencias_book/detalhes_ausencias_book_widget.dart'
+    show DetalhesAusenciasBookWidget;
+export '/fourmakers/book_colaboradores/detalhes/detalhes_acompanhamentos_book/detalhes_acompanhamentos_book_widget.dart'
+    show DetalhesAcompanhamentosBookWidget;
+export '/client_b_w_g/empresa/beneficios/beneficios_prestador/beneficios_prestador_widget.dart'
+    show BeneficiosPrestadorWidget;
+export '/mapa_alocacao/mapa_alocacao/mapa_alocacao_widget.dart'
+    show MapaAlocacaoWidget;
+export '/mapa_alocacao/alocacoes_no_projeto_old/alocacoes_no_projeto_old_widget.dart'
+    show AlocacoesNoProjetoOldWidget;
+export '/fourmakers/dados_colaborador/mycv/mycv_widget.dart' show MycvWidget;
+export '/mapa_alocacao/mapa_projetos/mapa_projetos_widget.dart'
+    show MapaProjetosWidget;
+export '/mapa_alocacao/mapa_alocacao_projeto/mapa_alocacao_projeto_widget.dart'
+    show MapaAlocacaoProjetoWidget;
+export '/mapa_alocacao/mapa_alocacao_colaborador/mapa_alocacao_colaborador_widget.dart'
+    show MapaAlocacaoColaboradorWidget;
+export '/client_b_w_g/empresa/beneficios/beneficios_editar/beneficios_editar_widget.dart'
+    show BeneficiosEditarWidget;
+export '/client_b_w_g/empresa/apontamentos/relatorio_faturamento/relatorio_faturamento_widget.dart'
+    show RelatorioFaturamentoWidget;
+export '/client_b_w_g/empresa/beneficios/beneficios_aba_comerciais/beneficios_aba_comerciais_widget.dart'
+    show BeneficiosAbaComerciaisWidget;
+export '/client_b_w_g/empresa/beneficios/beneficios_aba_interessados/beneficios_aba_interessados_widget.dart'
+    show BeneficiosAbaInteressadosWidget;
+export '/fourmakers/dados_colaborador/curriculonew/curriculonew_widget.dart'
+    show CurriculonewWidget;
+export '/client_b_w_g/empresa/beneficios/beneficios_detalhes/beneficios_detalhes_widget.dart'
+    show BeneficiosDetalhesWidget;
+export '/client_b_w_g/empresa/beneficios/beneficios_interesses_prestador/beneficios_interesses_prestador_widget.dart'
+    show BeneficiosInteressesPrestadorWidget;
+export '/client_b_w_g/empresa/apontamentos/apontamentos_empresa_copy/apontamentos_empresa_copy_widget.dart'
+    show ApontamentosEmpresaCopyWidget;
+export '/okr_pages/okr/okr_widget.dart' show OkrWidget;
+export '/fourmakers/mapa_de_visitas/mapa_visitas/mapa_visitas_widget.dart'
+    show MapaVisitasWidget;
+export '/fourmakers/mapa_de_visitas/mapa_visitas_nova_agenda/mapa_visitas_nova_agenda_widget.dart'
+    show MapaVisitasNovaAgendaWidget;
+export '/fourmakers/mapa_de_visitas/mapa_visitas_editar_nova_agenda/mapa_visitas_editar_nova_agenda_widget.dart'
+    show MapaVisitasEditarNovaAgendaWidget;
