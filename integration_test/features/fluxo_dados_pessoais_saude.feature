@@ -1,22 +1,15 @@
-Feature: Dados Pessoais Saude
-  Cadastro de Dados de Saude
-  
-  Scenario: Saude Salvar Sem Campo Obrigatório Preenchido
-	  Given Dado que eu tenha me autenticado com sucesso no sistema
-	  When Clico no menu "Dados Pessoais" sigo para tela "Minha Conta"
-		And Clico em "Minha Conta Saude" 
-		And Limpo Conteudo de "Possui alguma condição de saúde relevante" e clico em "Salvar Dados"
-		Then Devo receber alerta "Campos Obrigatórios! Por favor, preenchha todos os campos obrigatórios"
-		And fecho a tela para retornar para a tela "Minha Conta, Endereco"
-		
-	Scenario: Contato Preencher Registro Completo
-		Given Dado que eu tenha me autenticado com sucesso no sistema
-		When Clico no menu "Dados Pessoais" sigo para tela "Minha Conta"
-		And Clico em "Minha Conta Saude"
-		And Digito Valores Validos para Selecione caso tenha alguma deficiencia, Pertence Grupo de Risco para Covid-19, Possui alguma condicao de saude relevante
-		And Clico em Salvar Dados
-		Then Recebo confirmacao de registro salvo com sucesso
-	
-		
-		
-		
+@tag
+Feature: 	Validando Dados Pessoais Saude
+
+	@debug
+	Scenario: Atualizar Dados Pessoais Saude
+		Given Eu Acesso Pagina 'Dashboard'
+		When Eu Pressiono Menu 'Dados Pessoais'
+		And Eu Pressiono Menu 'Dados Pessoais Saude'
+		And Eu Digito Lista Verificacao 'Selecione caso tenha alguma deficiência: = Nenhuma'
+		And Eu Digito Lista Verificacao 'Pertence a grupo de risco para Covid19? = Não'
+		And Eu Digito Texto 'Possui alguma condição de saúde relevante? = Não'
+		And Eu Pressiono Botao 'Salvar dados'
+		Then Eu Espero Como Resultado Alerta 'Dados salvos com sucesso!'
+		And Eu Pressiono Alerta OK Para Fechar Alerta
+
