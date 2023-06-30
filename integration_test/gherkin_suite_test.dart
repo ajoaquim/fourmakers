@@ -4,23 +4,25 @@ import 'package:gherkin/gherkin.dart';
 
 // The application under test.
 import 'package:fourmakers_2/main.dart' as app;
-
-import 'steps/given/given_I_tap.dart';
-import 'steps/given/given_i_open_calculator.dart';
-import 'steps/then/then_I_expect_result.dart';
-import 'steps/when/when_I_press.dart';
-
+import 'steps/when/when_eu_digito.dart';
+import 'steps/when/when_eu_escolho.dart';
+import 'steps/given/given_eu_acesso.dart';
+import 'steps/then/then_eu_espero_resultado.dart';
+import 'steps/then/then_eu_fecho_alerta.dart';
+import 'steps/when/when_eu_pressiono.dart';
 part 'gherkin_suite_test.g.dart';
 
 @GherkinTestSuite()
 void main() {
   executeTestSuite(
     configuration: FlutterTestConfiguration(
-      stepDefinitions: [givenIOpenCalculator(),
-        givenITap(),
-        whenIPressNumber(),
-        whenIPressOperation(),
-        thenIExpectResult()
+      stepDefinitions: [
+        givenEuAcesso(),
+        thenEuEsperoResultado(),
+        thenEuFechoAlerta(),
+        whenEuDigito(),
+        whenEuEscolho(),
+        whenEuPressiono()
       ],
       order: ExecutionOrder.sequential,
       features: [RegExp('features/*.*.feature')],

@@ -1,9 +1,10 @@
+// TODO Implement this library.
 import 'package:flutter_gherkin/flutter_gherkin.dart';
 import 'package:gherkin/gherkin.dart';
 
-StepDefinitionGeneric whenEuPressiono() {
+StepDefinitionGeneric whenEuEscolho() {
   return when1<String, FlutterWidgetTesterWorld>(
-    'Eu Pressiono {string}',
+    'Eu Escolho {string}',
         (operation, context) async {
       final tester = context.world.rawAppDriver;
       await tester.pumpAndSettle();
