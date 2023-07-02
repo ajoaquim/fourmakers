@@ -1,5 +1,5 @@
 @tag
-Feature: 	Validando Dados Pessoais Contato
+Feature: 	Validando Dados Pessoais Dependente
 	Cadastro de Dados de Contato
 
 	Scenario: Contato Inserir Dependente

@@ -24,7 +24,7 @@ void main() {
         whenEuEscolho(),
         whenEuPressiono()
       ],
-      order: ExecutionOrder.sequential,
+      order: ExecutionOrder.alphabetical,
       features: [RegExp('features/*.*.feature')],
       reporters: [
         StdoutReporter(MessageLevel.error)

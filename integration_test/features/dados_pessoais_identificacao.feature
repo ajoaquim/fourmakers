@@ -1,5 +1,5 @@
 @tag
-Feature: 	Validando Dados Pessoais Identificação
+Feature: 	Validando Dados Pessoais Identificacao
 
 	@debug
 	Scenario: Atualizar Dados Pessoais Identificacao Completa

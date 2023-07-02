@@ -34,15 +34,15 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
 
   void testFeature0() {
     runFeature(
-      name: 'Validando Dados Pessoais Contato:',
+      name: 'Validando Dados Pessoais Saude:',
       tags: <String>['@tag'],
       run: () {
         runScenario(
-          name: 'Contato Inserir Dependente',
+          name: 'Atualizar Dados Pessoais Saude',
           description: null,
           path:
-              'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_dados_pessoais_dependente.feature',
-          tags: <String>['@tag'],
+              'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\dados_pessoais_saude.feature',
+          tags: <String>['@tag', '@debug'],
           steps: [
             (
               TestDependencies dependencies,
@@ -73,115 +73,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
               bool skip,
             ) async {
               return await runStep(
-                name: 'And Eu Pressiono \'Dependente\'',
-                multiLineStrings: <String>[],
-                table: null,
-                dependencies: dependencies,
-                skip: skip,
-              );
-            },
-            (
-              TestDependencies dependencies,
-              bool skip,
-            ) async {
-              return await runStep(
-                name: 'And Eu Pressiono \'Inserir dependente\'',
-                multiLineStrings: <String>[],
-                table: null,
-                dependencies: dependencies,
-                skip: skip,
-              );
-            },
-            (
-              TestDependencies dependencies,
-              bool skip,
-            ) async {
-              return await runStep(
-                name: 'And Eu Aguardo \'Adicionar dependente\'',
-                multiLineStrings: <String>[],
-                table: null,
-                dependencies: dependencies,
-                skip: skip,
-              );
-            },
-            (
-              TestDependencies dependencies,
-              bool skip,
-            ) async {
-              return await runStep(
-                name: 'And Eu Digito \'Nome completo = Danilo Joaquim\'',
-                multiLineStrings: <String>[],
-                table: null,
-                dependencies: dependencies,
-                skip: skip,
-              );
-            },
-            (
-              TestDependencies dependencies,
-              bool skip,
-            ) async {
-              return await runStep(
-                name: 'And Eu Digito \'CPF = 11111111-11\'',
-                multiLineStrings: <String>[],
-                table: null,
-                dependencies: dependencies,
-                skip: skip,
-              );
-            },
-            (
-              TestDependencies dependencies,
-              bool skip,
-            ) async {
-              return await runStep(
-                name: 'And Eu Digito \'Data nascimento = 11/07/1986\'',
-                multiLineStrings: <String>[],
-                table: null,
-                dependencies: dependencies,
-                skip: skip,
-              );
-            },
-            (
-              TestDependencies dependencies,
-              bool skip,
-            ) async {
-              return await runStep(
-                name: 'And Eu Digito \'RG = 15116261-X\'',
-                multiLineStrings: <String>[],
-                table: null,
-                dependencies: dependencies,
-                skip: skip,
-              );
-            },
-            (
-              TestDependencies dependencies,
-              bool skip,
-            ) async {
-              return await runStep(
-                name: 'And Eu Escolho \'Tipo de dependente = FILHO(A)\'',
-                multiLineStrings: <String>[],
-                table: null,
-                dependencies: dependencies,
-                skip: skip,
-              );
-            },
-            (
-              TestDependencies dependencies,
-              bool skip,
-            ) async {
-              return await runStep(
-                name: 'And Eu Digito \'Requer ajuda? Qual? = Não\'',
-                multiLineStrings: <String>[],
-                table: null,
-                dependencies: dependencies,
-                skip: skip,
-              );
-            },
-            (
-              TestDependencies dependencies,
-              bool skip,
-            ) async {
-              return await runStep(
-                name: 'And Eu Pressiono \'Salvar\'',
+                name: 'And Eu Pressiono \'Dados Pessoais Saude\'',
                 multiLineStrings: <String>[],
                 table: null,
                 dependencies: dependencies,
@@ -194,7 +86,57 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
             ) async {
               return await runStep(
                 name:
-                    'Then Eu Espero Resultado \'Dependente criado com sucesso!\'',
+                    'And Eu Escolho \'Selecione caso tenha alguma deficiência: = Nenhuma\'',
+                multiLineStrings: <String>[],
+                table: null,
+                dependencies: dependencies,
+                skip: skip,
+              );
+            },
+            (
+              TestDependencies dependencies,
+              bool skip,
+            ) async {
+              return await runStep(
+                name:
+                    'And Eu Escolho \'Pertence a grupo de risco para Covid19? = Não\'',
+                multiLineStrings: <String>[],
+                table: null,
+                dependencies: dependencies,
+                skip: skip,
+              );
+            },
+            (
+              TestDependencies dependencies,
+              bool skip,
+            ) async {
+              return await runStep(
+                name:
+                    'And Eu Digito \'Possui alguma condição de saúde relevante? = Não\'',
+                multiLineStrings: <String>[],
+                table: null,
+                dependencies: dependencies,
+                skip: skip,
+              );
+            },
+            (
+              TestDependencies dependencies,
+              bool skip,
+            ) async {
+              return await runStep(
+                name: 'And Eu Pressiono \'Salvar dados\'',
+                multiLineStrings: <String>[],
+                table: null,
+                dependencies: dependencies,
+                skip: skip,
+              );
+            },
+            (
+              TestDependencies dependencies,
+              bool skip,
+            ) async {
+              return await runStep(
+                name: 'Then Eu Espero Resultado \'Dados salvos com sucesso!\'',
                 multiLineStrings: <String>[],
                 table: null,
                 dependencies: dependencies,
@@ -215,17 +157,17 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
             },
           ],
           onBefore: () async => onBeforeRunFeature(
-            name: 'Validando Dados Pessoais Contato',
+            name: 'Validando Dados Pessoais Saude',
             path:
-                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_dados_pessoais_dependente.feature',
-            description: """Cadastro de Dados de Contato""",
+                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\dados_pessoais_saude.feature',
+            description: null,
             tags: <String>['@tag'],
           ),
           onAfter: () async => onAfterRunFeature(
-            name: 'Validando Dados Pessoais Contato',
+            name: 'Validando Dados Pessoais Saude',
             path:
-                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_dados_pessoais_dependente.feature',
-            description: """Cadastro de Dados de Contato""",
+                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\dados_pessoais_saude.feature',
+            description: null,
             tags: <String>['@tag'],
           ),
         );
@@ -235,14 +177,14 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
 
   void testFeature1() {
     runFeature(
-      name: 'Validando Dados Pessoais Identificação:',
+      name: 'Validando Dados Pessoais Identificacao:',
       tags: <String>['@tag'],
       run: () {
         runScenario(
           name: 'Atualizar Dados Pessoais Identificacao Completa',
           description: null,
           path:
-              'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_dados_pessoais_identificacao.feature',
+              'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\dados_pessoais_identificacao.feature',
           tags: <String>['@tag', '@debug'],
           steps: [
             (
@@ -416,9 +358,9 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
             },
           ],
           onBefore: () async => onBeforeRunFeature(
-            name: 'Validando Dados Pessoais Identificação',
+            name: 'Validando Dados Pessoais Identificacao',
             path:
-                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_dados_pessoais_identificacao.feature',
+                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\dados_pessoais_identificacao.feature',
             description: null,
             tags: <String>['@tag'],
           ),
@@ -428,7 +370,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
           name: 'Atualizar Dados Pessoais Identificacao Incompleta',
           description: null,
           path:
-              'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_dados_pessoais_identificacao.feature',
+              'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\dados_pessoais_identificacao.feature',
           tags: <String>['@tag'],
           steps: [
             (
@@ -517,9 +459,9 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
             },
           ],
           onAfter: () async => onAfterRunFeature(
-            name: 'Validando Dados Pessoais Identificação',
+            name: 'Validando Dados Pessoais Identificacao',
             path:
-                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_dados_pessoais_identificacao.feature',
+                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\dados_pessoais_identificacao.feature',
             description: null,
             tags: <String>['@tag'],
           ),
@@ -537,7 +479,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
           name: 'Atualizar Dados Pessoais Endereco Completo',
           description: null,
           path:
-              'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_dados_pessoais_endereco.feature',
+              'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\dados_pessoais_endereco.feature',
           tags: <String>['@tag', '@debug'],
           steps: [
             (
@@ -700,7 +642,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
           onBefore: () async => onBeforeRunFeature(
             name: 'Validando Dados Pessoais Endereco',
             path:
-                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_dados_pessoais_endereco.feature',
+                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\dados_pessoais_endereco.feature',
             description: null,
             tags: <String>['@tag'],
           ),
@@ -710,7 +652,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
           name: 'Atualizar Dados Pessoais Identificacao Incompleta',
           description: null,
           path:
-              'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_dados_pessoais_endereco.feature',
+              'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\dados_pessoais_endereco.feature',
           tags: <String>['@tag'],
           steps: [
             (
@@ -801,7 +743,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
           onAfter: () async => onAfterRunFeature(
             name: 'Validando Dados Pessoais Endereco',
             path:
-                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_dados_pessoais_endereco.feature',
+                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\dados_pessoais_endereco.feature',
             description: null,
             tags: <String>['@tag'],
           ),
@@ -819,7 +761,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
           name: 'Contato Inserir Contato de Emergência',
           description: null,
           path:
-              'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_dados_pessoais_contato.feature',
+              'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\dados_pessoais_contato.feature',
           tags: <String>['@tag'],
           steps: [
             (
@@ -959,7 +901,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
           onBefore: () async => onBeforeRunFeature(
             name: 'Validando Dados Pessoais Contato',
             path:
-                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_dados_pessoais_contato.feature',
+                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\dados_pessoais_contato.feature',
             description: """Cadastro de Dados de Contato""",
             tags: <String>['@tag'],
           ),
@@ -969,7 +911,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
           name: 'Contato Atualizar Dados de Contato',
           description: null,
           path:
-              'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_dados_pessoais_contato.feature',
+              'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\dados_pessoais_contato.feature',
           tags: <String>['@tag'],
           steps: [
             (
@@ -1073,7 +1015,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
           onAfter: () async => onAfterRunFeature(
             name: 'Validando Dados Pessoais Contato',
             path:
-                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_dados_pessoais_contato.feature',
+                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\dados_pessoais_contato.feature',
             description: """Cadastro de Dados de Contato""",
             tags: <String>['@tag'],
           ),
@@ -1084,6 +1026,207 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
 
   void testFeature4() {
     runFeature(
+      name: 'Validando Dados Pessoais Dependente:',
+      tags: <String>['@tag'],
+      run: () {
+        runScenario(
+          name: 'Contato Inserir Dependente',
+          description: null,
+          path:
+              'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\dados_pessoais_dependente.feature',
+          tags: <String>['@tag'],
+          steps: [
+            (
+              TestDependencies dependencies,
+              bool skip,
+            ) async {
+              return await runStep(
+                name: 'Given Eu Acesso \'Dashboard\'',
+                multiLineStrings: <String>[],
+                table: null,
+                dependencies: dependencies,
+                skip: skip,
+              );
+            },
+            (
+              TestDependencies dependencies,
+              bool skip,
+            ) async {
+              return await runStep(
+                name: 'When Eu Pressiono \'Dados Pessoais\'',
+                multiLineStrings: <String>[],
+                table: null,
+                dependencies: dependencies,
+                skip: skip,
+              );
+            },
+            (
+              TestDependencies dependencies,
+              bool skip,
+            ) async {
+              return await runStep(
+                name: 'And Eu Pressiono \'Dependente\'',
+                multiLineStrings: <String>[],
+                table: null,
+                dependencies: dependencies,
+                skip: skip,
+              );
+            },
+            (
+              TestDependencies dependencies,
+              bool skip,
+            ) async {
+              return await runStep(
+                name: 'And Eu Pressiono \'Inserir dependente\'',
+                multiLineStrings: <String>[],
+                table: null,
+                dependencies: dependencies,
+                skip: skip,
+              );
+            },
+            (
+              TestDependencies dependencies,
+              bool skip,
+            ) async {
+              return await runStep(
+                name: 'And Eu Aguardo \'Adicionar dependente\'',
+                multiLineStrings: <String>[],
+                table: null,
+                dependencies: dependencies,
+                skip: skip,
+              );
+            },
+            (
+              TestDependencies dependencies,
+              bool skip,
+            ) async {
+              return await runStep(
+                name: 'And Eu Digito \'Nome completo = Danilo Joaquim\'',
+                multiLineStrings: <String>[],
+                table: null,
+                dependencies: dependencies,
+                skip: skip,
+              );
+            },
+            (
+              TestDependencies dependencies,
+              bool skip,
+            ) async {
+              return await runStep(
+                name: 'And Eu Digito \'CPF = 11111111-11\'',
+                multiLineStrings: <String>[],
+                table: null,
+                dependencies: dependencies,
+                skip: skip,
+              );
+            },
+            (
+              TestDependencies dependencies,
+              bool skip,
+            ) async {
+              return await runStep(
+                name: 'And Eu Digito \'Data nascimento = 11/07/1986\'',
+                multiLineStrings: <String>[],
+                table: null,
+                dependencies: dependencies,
+                skip: skip,
+              );
+            },
+            (
+              TestDependencies dependencies,
+              bool skip,
+            ) async {
+              return await runStep(
+                name: 'And Eu Digito \'RG = 15116261-X\'',
+                multiLineStrings: <String>[],
+                table: null,
+                dependencies: dependencies,
+                skip: skip,
+              );
+            },
+            (
+              TestDependencies dependencies,
+              bool skip,
+            ) async {
+              return await runStep(
+                name: 'And Eu Escolho \'Tipo de dependente = FILHO(A)\'',
+                multiLineStrings: <String>[],
+                table: null,
+                dependencies: dependencies,
+                skip: skip,
+              );
+            },
+            (
+              TestDependencies dependencies,
+              bool skip,
+            ) async {
+              return await runStep(
+                name: 'And Eu Digito \'Requer ajuda? Qual? = Não\'',
+                multiLineStrings: <String>[],
+                table: null,
+                dependencies: dependencies,
+                skip: skip,
+              );
+            },
+            (
+              TestDependencies dependencies,
+              bool skip,
+            ) async {
+              return await runStep(
+                name: 'And Eu Pressiono \'Salvar\'',
+                multiLineStrings: <String>[],
+                table: null,
+                dependencies: dependencies,
+                skip: skip,
+              );
+            },
+            (
+              TestDependencies dependencies,
+              bool skip,
+            ) async {
+              return await runStep(
+                name:
+                    'Then Eu Espero Resultado \'Dependente criado com sucesso!\'',
+                multiLineStrings: <String>[],
+                table: null,
+                dependencies: dependencies,
+                skip: skip,
+              );
+            },
+            (
+              TestDependencies dependencies,
+              bool skip,
+            ) async {
+              return await runStep(
+                name: 'And Eu Fecho Alerta \'OK\'',
+                multiLineStrings: <String>[],
+                table: null,
+                dependencies: dependencies,
+                skip: skip,
+              );
+            },
+          ],
+          onBefore: () async => onBeforeRunFeature(
+            name: 'Validando Dados Pessoais Dependente',
+            path:
+                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\dados_pessoais_dependente.feature',
+            description: """Cadastro de Dados de Contato""",
+            tags: <String>['@tag'],
+          ),
+          onAfter: () async => onAfterRunFeature(
+            name: 'Validando Dados Pessoais Dependente',
+            path:
+                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\dados_pessoais_dependente.feature',
+            description: """Cadastro de Dados de Contato""",
+            tags: <String>['@tag'],
+          ),
+        );
+      },
+    );
+  }
+
+  void testFeature5() {
+    runFeature(
       name: 'validando fluxo login:',
       tags: <String>['@tag'],
       run: () {
@@ -1091,7 +1234,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
           name: 'login valido para foursys microsoft',
           description: null,
           path:
-              'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_login.feature',
+              'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\login.feature',
           tags: <String>['@tag', '@debug'],
           steps: [
             (
@@ -1111,7 +1254,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
               bool skip,
             ) async {
               return await runStep(
-                name: 'When Eu Pressiono \'Entrar Com A Conta Da Microsoft\'',
+                name: 'When Eu Pressiono \'Entrar com a conta da Microsoft\'',
                 multiLineStrings: <String>[],
                 table: null,
                 dependencies: dependencies,
@@ -1134,14 +1277,14 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
           onBefore: () async => onBeforeRunFeature(
             name: 'validando fluxo login',
             path:
-                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_login.feature',
+                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\login.feature',
             description: null,
             tags: <String>['@tag'],
           ),
           onAfter: () async => onAfterRunFeature(
             name: 'validando fluxo login',
             path:
-                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_login.feature',
+                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\login.feature',
             description: null,
             tags: <String>['@tag'],
           ),
@@ -1150,7 +1293,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
     );
   }
 
-  void testFeature5() {
+  void testFeature6() {
     runFeature(
       name: 'Validando Logout:',
       tags: <String>['@tag'],
@@ -1159,7 +1302,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
           name: 'Saindo da Aplicacao',
           description: null,
           path:
-              'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_logout.feature',
+              'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\logout.feature',
           tags: <String>['@tag', '@debug'],
           steps: [
             (
@@ -1215,157 +1358,14 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
           onBefore: () async => onBeforeRunFeature(
             name: 'Validando Logout',
             path:
-                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_logout.feature',
+                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\logout.feature',
             description: null,
             tags: <String>['@tag'],
           ),
           onAfter: () async => onAfterRunFeature(
             name: 'Validando Logout',
             path:
-                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_logout.feature',
-            description: null,
-            tags: <String>['@tag'],
-          ),
-        );
-      },
-    );
-  }
-
-  void testFeature6() {
-    runFeature(
-      name: 'Validando Dados Pessoais Saude:',
-      tags: <String>['@tag'],
-      run: () {
-        runScenario(
-          name: 'Atualizar Dados Pessoais Saude',
-          description: null,
-          path:
-              'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_dados_pessoais_saude.feature',
-          tags: <String>['@tag', '@debug'],
-          steps: [
-            (
-              TestDependencies dependencies,
-              bool skip,
-            ) async {
-              return await runStep(
-                name: 'Given Eu Acesso \'Dashboard\'',
-                multiLineStrings: <String>[],
-                table: null,
-                dependencies: dependencies,
-                skip: skip,
-              );
-            },
-            (
-              TestDependencies dependencies,
-              bool skip,
-            ) async {
-              return await runStep(
-                name: 'When Eu Pressiono \'Dados Pessoais\'',
-                multiLineStrings: <String>[],
-                table: null,
-                dependencies: dependencies,
-                skip: skip,
-              );
-            },
-            (
-              TestDependencies dependencies,
-              bool skip,
-            ) async {
-              return await runStep(
-                name: 'And Eu Pressiono \'Dados Pessoais Saude\'',
-                multiLineStrings: <String>[],
-                table: null,
-                dependencies: dependencies,
-                skip: skip,
-              );
-            },
-            (
-              TestDependencies dependencies,
-              bool skip,
-            ) async {
-              return await runStep(
-                name:
-                    'And Eu Escolho \'Selecione caso tenha alguma deficiência: = Nenhuma\'',
-                multiLineStrings: <String>[],
-                table: null,
-                dependencies: dependencies,
-                skip: skip,
-              );
-            },
-            (
-              TestDependencies dependencies,
-              bool skip,
-            ) async {
-              return await runStep(
-                name:
-                    'And Eu Escolho \'Pertence a grupo de risco para Covid19? = Não\'',
-                multiLineStrings: <String>[],
-                table: null,
-                dependencies: dependencies,
-                skip: skip,
-              );
-            },
-            (
-              TestDependencies dependencies,
-              bool skip,
-            ) async {
-              return await runStep(
-                name:
-                    'And Eu Digito \'Possui alguma condição de saúde relevante? = Não\'',
-                multiLineStrings: <String>[],
-                table: null,
-                dependencies: dependencies,
-                skip: skip,
-              );
-            },
-            (
-              TestDependencies dependencies,
-              bool skip,
-            ) async {
-              return await runStep(
-                name: 'And Eu Pressiono \'Salvar dados\'',
-                multiLineStrings: <String>[],
-                table: null,
-                dependencies: dependencies,
-                skip: skip,
-              );
-            },
-            (
-              TestDependencies dependencies,
-              bool skip,
-            ) async {
-              return await runStep(
-                name: 'Then Eu Espero Resultado \'Dados salvos com sucesso!\'',
-                multiLineStrings: <String>[],
-                table: null,
-                dependencies: dependencies,
-                skip: skip,
-              );
-            },
-            (
-              TestDependencies dependencies,
-              bool skip,
-            ) async {
-              return await runStep(
-                name: 'And Eu Fecho Alerta \'OK\'',
-                multiLineStrings: <String>[],
-                table: null,
-                dependencies: dependencies,
-                skip: skip,
-              );
-            },
-          ],
-          onBefore: () async => onBeforeRunFeature(
-            name: 'Validando Dados Pessoais Saude',
-            path:
-                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_dados_pessoais_saude.feature',
-            description: null,
-            tags: <String>['@tag'],
-          ),
-          onAfter: () async => onAfterRunFeature(
-            name: 'Validando Dados Pessoais Saude',
-            path:
-                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\fluxo_dados_pessoais_saude.feature',
+                'C:\\Users\\ajoaquim\\workspace-flutter\\_fourmakers\\.\\integration_test\\features\\logout.feature',
             description: null,
             tags: <String>['@tag'],
           ),
