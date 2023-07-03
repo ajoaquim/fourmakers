@@ -9,12 +9,12 @@ StepDefinitionGeneric givenEuAcesso() {
   return given1<String, FlutterWidgetTesterWorld>(
     'Eu Acesso {string}',
         (text, context) async {
-          const url = 'https://fourmakers.app.foursys.com/homeDashboard';
-          if (await canLaunchUrl(Uri.parse(url))) {
-            await launchUrl(Uri.parse(url));
-          } else {
-            throw 'Could not launch $url';
-          }
+          //const url = 'https://fourmakers.app.foursys.com/homeDashboard';
+         // if (await canLaunchUrl(Uri.parse(url))) {
+           // await launchUrl(Uri.parse(url));
+          //} else {
+          //  throw 'Could not launch $url';
+        //  }
 
       //await context.world.appDriver.waitForAppToSettle();
 

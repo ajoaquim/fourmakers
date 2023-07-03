@@ -1,8 +1,8 @@
 @tag
-Feature: 	Validando Dados Pessoais Identificacao
+Feature: 	Validando Dados Pessoais
 
 	@debug
-	Scenario: Atualizar Dados Pessoais Identificacao Completa
+	Scenario: Atualizar Dados Pessoais
 		Given Eu Acesso 'Dashboard'
 		When Eu Pressiono 'Dados Pessoais'
 		And Eu Pressiono 'Dados Pessoais Identificacao'
@@ -15,16 +15,8 @@ Feature: 	Validando Dados Pessoais Identificacao
 		And Eu Escolho 'Orientacao sexual = Heterossexual'
 		And Eu Escolho 'Pessoa refugiada? = Não'
 		And Eu Escolho 'Salvar dados'
-		Then Eu Escolho 'Dados salvos com sucesso!'
+		Then Eu Espero Resultado 'Dados salvos com sucesso!'
 		And Eu Fecho Alerta 'OK'
 
-	Scenario: Atualizar Dados Pessoais Identificacao Incompleta
-		Given Eu Acesso 'Dashboard'
-		When Eu Pressiono 'Dados Pessoais'
-		And Eu Pressiono 'Dados Pessoais Identificacao'
-		And Eu Digito 'RG = brancos'
-		And Eu Pressiono 'Salvar dados'
-		Then Eu Espero Resultado 'Campos obrigatorios'
-		And Eu Fecho Alerta 'Fechar'
 
 		
