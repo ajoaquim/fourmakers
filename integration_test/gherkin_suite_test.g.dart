@@ -23,12 +23,12 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
 
   @override
   void onRun() {
-    testFeature0();
-    testFeature1();
-    testFeature2();
-    testFeature3();
-    testFeature4();
     testFeature5();
+    testFeature1();
+    testFeature3();
+    testFeature2();
+    testFeature0();
+    testFeature4();
     testFeature6();
   }
 
